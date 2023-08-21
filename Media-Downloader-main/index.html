@@ -1,211 +1,281 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <!-- Icon  -->
-    <link rel="shortcut icon" href="./logo/MAG_big-png.png" type="image/x-icon">
-    <!-- Animation css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Font Text -->
-    <link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=elmessiri-bold,arwa,milano,mirza-medium,lemonada" />
-    <!-- Style css -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/page.css">
-    <!-- Title -->
-    <title>MAG</title>
-</head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid">
-            <!-- <a class="navbar-brand" href="#" onclick="location.reload()"> < MAG /> </a> -->
-            <!-- Navbar Brand -->
-            <img src="./logo/MAG_big-png.png" alt="" onclick="location.reload()" style="width: 9em;">
-            <button class="navbar-toggler" style="border: 0; color: transparent;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <label class="hamburger">
-                    <input type="checkbox">
-                    <svg viewBox="0 0 32 32">
-                        <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
-                        <path class="line" d="M7 16 27 16"></path>
-                    </svg>
-                </label>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown" style="direction: rtl; text-align: end;">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./page/twitter.html">Twitter Downloader</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./page/insta.html">Instagram Downloader</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./page/face.html">Facebook Downloader</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./page/youtube.html">YouTube Downloader</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Title of Page -->
-    <section class="title" style="text-align: center;">
-        <div class="container">
-            <div class="img">
-                <img class="animate__animated animate__backInLeft" src="./logo/MAG_big-png.png" alt="" style="width: 11em; margin-top: 9em;" >
-            </div> <br>
-            <div class="animate__animated animate__headShake" style="margin-bottom: 14em;">
-                <h2 style="color: #22226a; font-family: lemonada;">Media Downloader</h2>
-                <p>Fast and free all in one video downloader <br> By <span style="font-size: 17px; font-weight: 600; color: #22226a;">URL <i class="fa-solid fa-link"></i></span></p>
-            </div>
-            <!-- Scroll Down Button -->
-            <a href="#page" class="scroll-down">
-                <div class="scrolldown" style="--color: skyblue">
-                        <div class="chevrons">
-                            <div class="chevrondown"></div>
-                            <div class="chevrondown"></div>
-                        </div>
-                </div>
-            </a>
-        </div>
-    </section>
-
-
-    <!-- Downloader Cards -->
-    <section class="py-20">
-        <div class="container">
-            <div class="max-w-3xl mx-auto mb-16 text-center ">
-                <h2 class="mt-8 mb-10">Supports The Most Popular Sources</h2>
-                <p class="lead text-muted">You can check regularly updated supported sources list.</p>
-            </div>
-            <br><br>
-            <div class="row justify-content-center" data-aos="zoom-in">
-                <!-- Youtube Card -->
-                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 p-3"  >
-                    <div class="bg-light rounded py-4 text-center" id="card">
-                        <a href="./page/youtube.html" class="text-decoration-none text-dark">
-                            <img class="d-block mx-auto lazy" style="margin-bottom: .7em; width: 4em; height: 4em;"  src="./logo/youtube1.webp" alt="YouTube video downloader" title="YouTube">
-                            <span style="font-size: 20px; font-family: 'elmessiri-bold';">YouTube</span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Facebook Card -->
-                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 p-3" >
-                    <div class="bg-light rounded py-4 text-center" id="card">
-                        <a href="./page/face.html" class="text-decoration-none text-dark">
-                            <img class="d-block mx-auto lazy" style="margin-bottom: .7em; width: 4em; height: 4em; border-radius: 10px;"  src="./logo/face.webp" alt="Facebook video downloader" title="Facebook">
-                            <span style="font-size: 20px; font-family: 'elmessiri-bold';">Facebook</span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Instagram Card -->
-                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 p-3" >
-                    <div class="bg-light rounded py-4 text-center" id="card">
-                        <a href="./page/insta.html" class="text-decoration-none text-dark">
-                            <img class="d-block mx-auto lazy" style="margin-bottom: .7em; width: 4em; height: 4em; border-radius: 10px;"  src="./logo/insta.png" alt="Instagram video downloader" title="Instagram">
-                            <span style="font-size: 20px; font-family: 'elmessiri-bold';">Instagram</span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Twitter Card -->
-                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 p-3" >
-                    <div class="bg-light rounded py-4 text-center" id="card">
-                        <a href="./page/twitter.html" class="text-decoration-none text-dark">
-                            <img class="d-block mx-auto lazy" style="margin-bottom: .7em; width: 4em; height: 4em; border-radius: 10px;" src="./logo/twitter1.png" alt="Twitter video downloader" title="Twitter">
-                            <span style="font-size: 20px; font-family: 'elmessiri-bold';">Twitter</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Section Card -->
-    <section style="padding: 5em 0;" id="page">
-        <div class="container">
-            <div class="max-w-3xl mx-auto mb-16 text-center ">
-                <h2 class="mt-8 mb-10">How to download videos ?</h2>
-                <p class="lead text-muted">To download videos, you have to follow three easy steps :</p>
-            </div>
-            <br> <br>    
-            
-            <div class="islamic-card" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
-                    <!-- Copy Card -->
-                    <div class="cards akeda mb-5">
-                            <img class="cards-img mb-3" alt="" src="./logo/copy-url.webp">
-                            <div class="desc" style="width: 15em; text-align: center;">
-                                <h5>
-                                <div class="why-title ">
-                                    <span class="flex-shrink-0 align-items-center justify-content-center rounded-circle" style="width: 36px; height: 36px; display: inline-flex; background: #fafafa;">1</span>
-                                    Copy Link
-                                </div>
-                                </h5>
-                                <p>Just copy link of source which you want to download.</p>
-                            </div>
-                    </div>    
-                    <!-- Past card -->
-                    <div class="cards feka mb-5" >
-                            <img class="cards-img mb-3" alt="" src="./logo/choose-format.webp">
-                            <div class="desc" style="width: 15em; text-align: center;">
-                                <h5>
-                                <div class="why-title">
-                                    <span class="flex-shrink-0 align-items-center justify-content-center rounded-circle" style="width: 36px; height: 36px; display: inline-flex; background: #fafafa;">2</span>
-                                    Paste Link
-                                </div>
-                                </h5>
-                                <p>Paste a video link of supported sources into the input field above.</p>
-                            </div>
-                    </div>    
-                    <!-- Download card -->
-                    <div class="cards sera mb-5" >
-                            <img class="cards-img mb-3" alt="" src="./logo/get-file.webp">
-                            <div class="desc" style="width: 15em; text-align: center;">
-                                <h5>
-                                <div class="why-title">
-                                    <span class="flex-shrink-0 align-items-center justify-content-center rounded-circle" style="width: 36px; height: 36px; display: inline-flex; background: #fafafa;">3</span>
-                                    Download Now!
-                                </div>
-                                </h5>
-                                <p>Click to download button and see files which is available to download.</p>
-                            </div>
-                    </div>    
-            </div>
-            <a href="https://drive.google.com/file/d/1kkClSdZOneuLggoSFdWy-sa3chxwqZYF/view?usp=sharing" target="_blank" style="display: flex; justify-content: space-around; text-decoration: none;"><button style="padding: 10px;" type="button" class="btn btn-success">Download QR <i class="fa-solid fa-qrcode"></i></button></a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <div class="footer-basic">
-        <footer>
-            <div class="social">
-                <a target="_blank" style="background-color: #ac2bac; color: #fff;" href="https://www.instagram.com/m_ahmeeeed/"><i class="fa-brands fa-instagram"></i></a>
-                <a target="_blank" style="background-color: #0082ca; color: #fff;" href="https://www.linkedin.com/in/mohamed-ahmed-bb358b239/"><i class="fa-brands fa-linkedin"></i></a>
-                <a target="_blank" style="background-color: #55acee; color: #fff;" href="https://twitter.com/M0hamed_ahmed20"><i class="fa-brands fa-twitter"></i></a>
-                <a target="_blank" style="background-color: #333333; color: #fff;" href="https://github.com/Mohamed20a"><i class="fa-brands fa-github"></i></a>
-                <a target="_blank" style="background-color: #0e40bd; color: #fff;" href="https://www.facebook.com/profile.php?id=100006434713527"><i class="fa-brands fa-facebook-f"></i></a>
-            </div>
-            <a href="https://portfolioo-1.netlify.app/" target="_blank" style="text-decoration: none;"> <p class="copyright"> Mohamed Ahmed Elgeady ❤</p> </a>
-        </footer>
-    </div>
-
-    <!-- Bootstrap css -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <!-- Fontawesome Icons -->
-    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
-</body>
+<!DOCTYPE html xmlns="https://www.w3.org/1999/xhtml" lang="en" manifest="https://gettvid.com/gettvid.appcache">
+ <head id="j_idt2"> 
+  <title>Youtube Downloader | Gettvid.com</title> 
+  <meta name="propeller" content="87c3d748f7d5ed9c4fea687654b8841d"> 
+  <meta name="description" content="Download video, Download MP3extract and download videos and audios from Youtube, Facebook, Instagram, Twitter, SendVid, Vimeo, CNN, among others."> 
+  <meta name="Cache-Control" content="max-age=3600"> 
+  <meta name="keywords" content="youtube downloader,video downloader,download youtube mp3,descargar videos de youtube,descargar videos,youtube to mo3,convertidor mp4,youtube mp3 download,youtube mp3 downloader,convert youtube video to mp3,download youtube videos mp3,youtube mp4,dailymotion,twitter video downloader,youtube mp3,baixar video do youtube,baixar video youtube,conversor youtube,converter youtube para mp3,baixar mp3,download video instagram,convertidor mp3,convertidor youtube mp3,convertidor de youtube a mp3,sendvid download,sendvid video downloader,baixar vídeos do twitter,baixar música,converta vídeos do youtube,youtube to mp3 converter,permite baixar vídeos,baixe vídeos,baixar vídeo do instagram,yt to mp3,youtube converter mp4,yt mp3,youtube mp3 converter,online video downloader,youtube downloader online,youtube video downloader for pc,download videos youtube,download on line youtube,youtube video downloader online,baixar vídeo do youtube para celular,programa para baixar vídeos do youtube,free youtube download"> 
+  <link rel="canonical" href="https://gettvid.com"> 
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8"> 
+  <meta http-equiv="Content-Security-Policy" content="worker-src"> 
+  <meta http-equiv="X-Content-Type-Options" content="nosniff"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="robots" content="index, follow"> 
+  <meta property="og:title" content="Youtube Downloader | gettvid.com"> 
+  <meta property="og:description" content="Download video, Download MP3extract and download videos and audios from Youtube, Facebook, Instagram, Twitter, SendVid, Vimeo, CNN, among others."> 
+  <meta property="og:image" content="https://gettvid.com/statics/image/icon.svg"> 
+  <meta property="og:url" content="https://gettvid.com"> 
+  <meta property="og:type" content="website"> 
+  <meta property="og:locale" content="en"> 
+  <link rel="icon" type="image/png" href="https://gettvid.com/statics/image/icon.svg"> 
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/statics/image/apple-touch-icon-57x57.png"> 
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/statics/image/apple-touch-icon-114x114.png"> 
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/statics/image/apple-touch-icon-72x72.png"> 
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/statics/image/apple-touch-icon-144x144.png"> 
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/statics/image/apple-touch-icon-60x60.png"> 
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/statics/image/apple-touch-icon-120x120.png"> 
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/statics/image/apple-touch-icon-76x76.png"> 
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/statics/image/apple-touch-icon-152x152.png"> 
+  <meta name="application-name" content="Gettvid"> 
+  <link rel="stylesheet" type="text/css" href="/statics/css/style-lg.css"> 
+  <meta http-equiv="origin-trial" content="A7CQXglZzTrThjGTBEn1rWTxHOEtkWivwzgea+NjyardrwlieSjVuyG44PkYgIPGs8Q9svD8sF3Yedn0BBBjXAkAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="> 
+  <meta http-equiv="origin-trial" content="A3vKT9yxRPjmXN3DpIiz58f5JykcWHjUo/W7hvmtjgh9jPpQgem9VbADiNovG8NkO6mRmk70Kex8/KUqAYWVWAEAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="> 
+  <meta http-equiv="origin-trial" content="A4A26Ymj79UVY7C7JGUS4BG1s7MdcDokAQf/RP0paks+RoTYbXHxceT/5L4iKcsleFCngi75YfNRGW2+SpVv1ggAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="> 
+  <meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="> 
+  <meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="> 
+ </head> 
+ <body style="padding: 0px;"> 
+  <header> 
+   <div class="main_nav"> 
+    <a class="logo" href="/"> <span style="color:"> Gettvid.com</span> </a> 
+    <div class="language"> 
+    </div> 
+   </div> 
+  </header> 
+  <div class="container" style="height: auto !important;"> 
+   <div class="ftco-section center" id="convert"> 
+    <h1 class="title">All Video Downloader</h1> 
+    <p>Extract any video from the internet in either video or audio format. In the best possible quality.</p> 
+    <form id="search-form" name="search-form" method="post" action="/" class="search-form relative" enctype="application/x-www-form-urlencoded"> 
+     <input type="hidden" name="search-form" value="search-form"> 
+     <div> 
+      <input id="id-input-host" type="search" class="class-search" aria-label="Search" placeholder="Enter your video URL here." value=""> 
+      <br> 
+      <br> 
+      <center> 
+       <input type="radio" checked name="id-tipo" id="id-tipo:0" value="VIDEO"> 
+       <label for="id-tipo:0"> <b>VIDEO</b> (Best Quality) </label> 
+       <input type="radio" name="id-tipo" id="id-tipo:1" value="MP3"> 
+       <label for="id-tipo:1"> <b>MP3</b> (Best Quality) </label> 
+      </center> 
+     </div> 
+     <br> 
+     <a id="id-button-youtube" style="margin-top: 10px" class="btn-red" onclick="buttonClick()">Extract</a> 
+     <center> 
+      <div id="id-panel-global-loading" class="progress m-t-md full" style="display: none"> 
+       <progress id="id-panel-loading" value="1" max="100"> 1% </progress> 
+      </div> 
+     </center> 
+     <br> 
+     <center> 
+      <div id="id-panel-footer" style="display: none; background: #000; width: 70%; overflow-x: scroll; overflow-y: scroll; max-height: 150px; text-align: left;"> 
+       <div style="background: #000; width: 100%; font-size: 11px; font-family: courier; margin-top: 10px; margin-bottom: 10px;margin-left: 10px"> 
+        <code id="id-panel-result" style="background-color: #000; color: #62cb31; min-height: 200px;">Gettvid.com: Terminal...</code> 
+        <code id="id-panel-result-now" style="background-color: #000; color: #62cb31; min-height: 200px;"></code> 
+       </div> 
+      </div> 
+     </center> 
+     <br> 
+     <center> 
+      <div id="id-panel-button-download"></div> 
+     </center> 
+     <input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="2701677871076866923:-4898006028228790248" autocomplete="off"> 
+    </form> 
+    <div id="search-result"></div> 
+   </div> 
+   <div class="ftco-section center" style="padding: 00px 00px 10px;display:block" id="id-div-lastdownloads"> 
+    <h2 class="title">Last downloads</h2> 
+    <ul id="id-div-last-videos" class="listitem items-more"> 
+    </ul> 
+   </div> 
+   <div class="ftco-section center" style="padding: 00px 00px 10px;display:block" id="id-div-topdownloads"> 
+    <h2 class="title">Top Downloads</h2> 
+    <ul id="id-div-videos" class="listitem items-more"> 
+    </ul> 
+   </div> 
+   <div class="ftco-section"> 
+    <h2 class="title center">How to download video?</h2> 
+    <ul class="listicon liststep"> 
+     <li><span class="number">1</span> <span>Copy Video URL</span></li> 
+     <li><span class="number">2</span> <span>Paste URL on our website and click Extract</span></li> 
+     <li><span class="number">3</span> <span>Follow the download on our terminal and at the end click on the button to download.</span></li> 
+    </ul> 
+   </div> 
+   <div class="ftco-section section-left"> 
+    <section itemscope itemtype="https://schema.org/FAQPage"> 
+     <div class="sf_container" style="margin-top: 20px"> 
+      <div class="wrapper"> 
+       <div class="sf_faq"> 
+        <h3 class="title center" style="margin-top: 20px">Questions and answers</h3> 
+        <div class="faq_item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question"> 
+         <div class="faq_item_title"> 
+          <h4 itemprop="name">How do I Download Youtube Video on PC?</h4> 
+         </div> 
+         <div class="faq_item_content" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"> 
+          <div itemprop="text"> 
+           <div class="card-deck intro mb-4"> 
+            <div class="card"> 
+             <p> <b class="step" style="margin-top: 20px">Step 1:</b> </p> 
+             <p>Open the video on youtube, copy the URL link and paste it on our website.</p> 
+            </div> 
+            <div class="card"> 
+             <p> <b class="step">Step 2:</b> </p> 
+             <p>Select the Video in best quality option, click the extract button and wait.</p> 
+            </div> 
+            <div class="card"> 
+             <p> <b class="step">Step 3:</b> </p> 
+             <p>Click on the Download video button.</p> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+        <div class="faq_item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question"> 
+         <div class="faq_item_title"> 
+          <h4 itemprop="name">How to download Youtube video on Android?</h4> 
+         </div> 
+         <div class="faq_item_content" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"> 
+          <div itemprop="text"> 
+           <div class="card-deck intro mb-4"> 
+            <div class="card"> 
+             <p> <b class="step" style="margin-top: 20px">Step 1:</b> </p> 
+             <p>Open the Youtube app and copy the video link.</p> 
+            </div> 
+            <div class="card"> 
+             <p> <b class="step">Step 2:</b> </p> 
+             <p>Using Chrome paste the URL on our website, click the Extract button and wait.</p> 
+            </div> 
+            <div class="card"> 
+             <p> <b class="step">Step 3:</b> </p> 
+             <p>Click on the Download video button.</p> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+        <div class="faq_item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question"> 
+         <div class="faq_item_title"> 
+          <h4 itemprop="name">How to Download Youtube Video on Iphone?</h4> 
+         </div> 
+         <div class="faq_item_content" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"> 
+          <div itemprop="text"> 
+           <div class="card-deck intro mb-4"> 
+            <div class="card"> 
+             <p> <b class="step">Step 1:</b> </p> 
+             <p>Open the Youtube app and copy the video link.</p> 
+            </div> 
+            <div class="card"> 
+             <p> <b class="step">Step 2:</b> </p> 
+             <p>Using SAFARI paste the URL on our website, click the Extract button and wait.</p> 
+            </div> 
+            <div class="card"> 
+             <p> <b class="step">Step 3:</b> </p> 
+             <p>Click on the Download video button.</p> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+        <div class="faq_item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question"> 
+         <div class="faq_item_title"> 
+          <h4 itemprop="name">How to download video from Sendvid?</h4> 
+         </div> 
+         <div class="faq_item_content" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"> 
+          <div itemprop="text"> 
+           <div class="card-deck intro mb-4"> 
+            <div class="card"> 
+             <p> <b class="step">Step 1:</b> </p> 
+             <p>Copy the Sendvid Video Link.</p> 
+            </div> 
+            <div class="card"> 
+             <p> <b class="step">Step 2:</b> </p> 
+             <p>Using SAFARI (Iphone) or Chrome (PC and Android) paste the URL on our website, click the Extract button and wait</p> 
+            </div> 
+            <div class="card"> 
+             <p> <b class="step">Step 3:</b> </p> 
+             <p>Click on the Download video button.</p> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+        <div class="faq_item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question"> 
+         <div class="faq_item_title"> 
+          <h4 itemprop="name">How to download video from Youtube?</h4> 
+         </div> 
+         <div class="faq_item_content" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"> 
+          <div itemprop="text"> 
+           <ul> 
+            <li class="step">1. Copy the video address and paste it on our website.</li> 
+            <li class="step">2. Click the button to convert video or audio. Always in the best quality.</li> 
+            <li class="step">3. Click on the Download button</li> 
+            <li class="step">4. That fast!</li> 
+           </ul> 
+          </div> 
+         </div> 
+        </div> 
+        <div class="faq_item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question"> 
+         <div class="faq_item_title" style="margin-top: 20px"> 
+          <h4 itemprop="name">Is there any video download limit?</h4> 
+         </div> 
+         <div class="faq_item_content" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"> 
+          <div itemprop="text">
+            No. Our website is free. Feel free to download as many videos as you like. 
+          </div> 
+         </div> 
+        </div> 
+        <div class="faq_item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question"> 
+         <div class="faq_item_title" style="margin-top: 20px"> 
+          <h4 itemprop="name">What sites are supported?</h4> 
+         </div> 
+         <div class="faq_item_content" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"> 
+          <div itemprop="text">
+            The list is Huge, but we can tell you a few: Youtube, Facebook, Instagram, SendVid, Twitter, CNN, IGNVideo, NBA, NBC, NextTV, nick.com 
+          </div> 
+         </div> 
+        </div> 
+        <div class="faq_item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question"> 
+         <div class="faq_item_title" style="margin-top: 20px"> 
+          <h4 itemprop="name">What platform can I use Gettvideo.com on?</h4> 
+         </div> 
+         <div class="faq_item_content" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"> 
+          <div itemprop="text">
+            On all systems that have internet access and a browser. IPHONE, ANDROID, TABLETS, PC 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </section> 
+   </div> 
+  </div> 
+  <footer> 
+   <div class="copyright"> 
+    <ul class="flex flex-a-i-center"> 
+     <li><a href="mailto:gettvid@gmail.com">gettvid@gmail.com</a></li> 
+    </ul> 
+    <p class="mag0">© 2021 gettvid.com</p> 
+   </div> 
+  </footer> 
+  <div style="margin-right: 10px"></div> 
+  <ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"> 
+   <div id="aswift_0_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"> 
+    <iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-3327695882262362&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;lmt=1692562155&amp;plat=3%3A65536%2C4%3A65536%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C32%3A32%2C41%3A32%2C42%3A32&amp;format=0x0&amp;url=https%3A%2F%2Fgettvid.com%2F&amp;ea=0&amp;pra=5&amp;wgl=1&amp;dt=1692562154771&amp;bpp=34&amp;bdt=1617&amp;idt=298&amp;shv=r20230816&amp;mjsv=m202308160101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D8b379e5f60e50470-224163edade30048%3AT%3D1692562121%3ART%3D1692562121%3AS%3DALNI_MabwoNUEw3hwrXPCA16qVbBT9XYPA&amp;gpic=UID%3D00000d8caf971b9a%3AT%3D1692562121%3ART%3D1692562121%3AS%3DALNI_MaZyJjd_8Y-gLjj31n-kLZ1d47rhQ&amp;nras=1&amp;correlator=7405203032742&amp;frm=20&amp;pv=2&amp;ga_vid=2021028300.1692562120&amp;ga_sid=1692562155&amp;ga_hid=270861235&amp;ga_fc=1&amp;u_tz=-300&amp;u_his=3&amp;u_h=915&amp;u_w=412&amp;u_ah=915&amp;u_aw=412&amp;u_cd=24&amp;u_sd=1.75&amp;dmc=2&amp;adx=-12245933&amp;ady=-12245933&amp;biw=412&amp;bih=766&amp;scr_x=0&amp;scr_y=0&amp;eid=44759837%2C44759927%2C44759876%2C31077085%2C31077092%2C31077148%2C44795909%2C31077160%2C44799579&amp;oid=2&amp;pvsid=4164307763060265&amp;tmod=586200813&amp;uas=0&amp;nvt=1&amp;fsapi=1&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C412%2C0%2C412%2C766%2C412%2C766&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=32768&amp;bc=31&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;dtd=389" data-google-container-id="a!1" data-load-complete="true"></iframe> 
+   </div></ins> 
+  <ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" data-anchor-status="ready-to-display" style="display: none;" data-ad-status="filled"> 
+   <div id="aswift_9_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 69px; width: 412px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"> 
+    <iframe id="aswift_9" name="aswift_9" style="width:412px !IMPORTANT;height:69px !IMPORTANT" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="412" height="69" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/html/r20230816/r20110914/zrt_lookup.html?fsb=1#RS-1-&amp;adk=1812271802&amp;client=ca-pub-3327695882262362&amp;fa=2&amp;ifi=10&amp;uci=a!a&amp;btvi=2&amp;xpc=B67RBCa0qP&amp;p=https%3A//gettvid.com" data-google-container-id="a!a" data-google-query-id="CMC5-bCF7IADFfOeywEdvPIL-Q" data-load-complete="true"></iframe> 
+   </div> 
+   <div class="grippy-host" style="position: absolute !important; top: 69px !important; width: 100% !important;"></div></ins> 
+  <iframe id="google_esf" name="google_esf" src="https://googleads.g.doubleclick.net/pagead/html/r20230816/r20190131/zrt_lookup.html" style="display: none;"></iframe> 
+ </body>
 </html>
+
+
+
+ 
+
+
+
